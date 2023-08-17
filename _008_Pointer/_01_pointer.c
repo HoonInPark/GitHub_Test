@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void main()
-{
+void main() {
 	int num = 100;
-	int* pnum = &num;
+	int* pnum;
+	pnum = &num;
 
 	printf("%llu, %p\n", pnum, pnum);
-	printf("%llu, %p\n", &pnum, &pnum);
+	printf("%llu, %p\n", &num, &num);
 
 	printf("%d, %d\n", num, *pnum);
 
